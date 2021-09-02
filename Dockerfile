@@ -2,8 +2,8 @@ FROM alpine:3.14
 
 WORKDIR /usr/local/cardano-node/bin
 RUN apk add wget
-RUN wget https://hydra.iohk.io/build/6263009/download/1/cardano-node-1.27.0-linux.tar.gz
-RUN tar -zxvf cardano-node-1.27.0-linux.tar.gz
+RUN wget https://hydra.iohk.io/build/6263009/download/1/cardano-node-1.29.0-linux.tar.gz
+RUN tar -zxvf cardano-node-1.29.0-linux.tar.gz
 RUN mkdir -p /data/db
 RUN mkdir /ipc
 RUN wget "https://hydra.iohk.io/build/7370192/download/1/mainnet-config.json"
